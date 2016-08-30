@@ -31,6 +31,7 @@ WORKDIR /srv
 
 ADD Caddyfile /etc/Caddyfile
 ADD index.php /srv/index.php
+ADD api.php /srv/api.php
 
 ENTRYPOINT ["/usr/bin/caddy"]
 CMD ["--conf", "/etc/Caddyfile"]
