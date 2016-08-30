@@ -8,6 +8,7 @@ $data = json_decode(file_get_contents('php://input'), true);
 
 print_r($data);
 echo $data["repository"];
-
+// $cmd = "git clone ".  $data["repository"];
+// $out = shell_exec($cmd);   //this works
 
 ?>
